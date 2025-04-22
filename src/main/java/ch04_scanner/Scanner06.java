@@ -18,18 +18,20 @@ public class Scanner06 {
          */
 
         Scanner scanner = new Scanner(System.in);
+        String name;
+        String address;
+        int age10;
 
         System.out.print("이름을 입력하세요 >>> ");
-        String name = scanner.next();
+        name = scanner.next();
         System.out.print("나이를 입력하세요 >>> ");
-        int age10 = scanner.nextInt();
+        age10 = scanner.nextInt();
         scanner.nextLine();
+        age10 += 10;
         System.out.print("주소를 입력하세요 >>> ");
-        String address = scanner.nextLine();
-        
+        address = scanner.nextLine();
 
         System.out.println("안녕하세요, 제 이름은 " + name + "입니다." + address + "에 살고 있습니다. \n"
-                        + "10년 후 나이는 " + (age10 + 10) + "살 입니다.");
-        
+                        + "10년 후 나이는 " + age10 + "살 입니다.");
     }
 }
