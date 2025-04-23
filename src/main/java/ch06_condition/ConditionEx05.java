@@ -40,6 +40,10 @@ public class ConditionEx05 {
                 case 9, 10 :
                     grade = "A";
                     break;
+//                case 10 :                 // switch의 특성을 사용하여
+//                case 9 :                  // case10과 9는 같기 때문에 바로 10과 9는 모두 A로 나온다.
+//                    grade = "A";
+//                    break;
                 case 8 :
                     grade = "B";
                     break;
@@ -49,11 +53,9 @@ public class ConditionEx05 {
                 case 6 :
                     grade = "D";
                     break;
-                case 5,4,3,2,1 :
+                default :
                     grade = "F";
-                    break;
-                default:
-                    break;
+
             }
         }
 
