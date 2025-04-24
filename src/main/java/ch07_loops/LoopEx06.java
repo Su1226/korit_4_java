@@ -1,5 +1,7 @@
 package ch07_loops;
 
+import java.util.Scanner;
+
 public class LoopEx06 {
     public static void main(String[] args) {
 
@@ -18,7 +20,6 @@ public class LoopEx06 {
                             + (i+5) + " " + (i+6) + " " + (i+7) + " "
                             + (i+8) + " " + (i+9) + " ");
             System.out.println();
-
         }
     }
 }
