@@ -50,15 +50,22 @@ public class MethodEx01 {
 
     public static void registerStudent2(int student) {
         for(int i=0; i<student; i++) {
-            registerStudent();
+            registerStudent(); // 재사용성의 예시
         }
+    }
 
-        // while의 경우
-//        int i = 0;
-//        while(i < student) {
-//            registerStudent();
-//            i++;
-//        }
+    public static void registerStudent3(int student) { // 1번과 2번을 합친 경우.
+        Scanner scanner = new Scanner(System.in);
+
+        for(int i = 0; i < student; i++) {
+            System.out.print("학번을 입력하세요. >>> ");
+            int studentNum = scanner.nextInt();
+            System.out.print("이름을 입력하세요. >>> ");
+            String studentName = scanner.next();
+
+            System.out.println("학번 : " + studentNum);
+            System.out.println("이름 : " + studentName);
+        }
     }
 
     public static void main(String[] args) {
@@ -69,5 +76,6 @@ public class MethodEx01 {
         int studentAll = scanner.nextInt();
 
         registerStudent2(studentAll);
+        // registerStudent3(studentAll);
     }
 }
