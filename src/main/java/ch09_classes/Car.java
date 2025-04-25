@@ -39,7 +39,7 @@ public class Car {
 
     public void displayCarInfo() {
         System.out.println("이 차의 색상은 " + color + " 이고, \n"
-                        + "최고 속도는 " + speed + "입니다. " + ((speed > 100 ? "빠릅니다." : "보통입니다.")));
+                + "최고 속도는 " + speed + "입니다. " + ((speed > 100 ? "빠릅니다." : "보통입니다.")));
 
     }
 }
