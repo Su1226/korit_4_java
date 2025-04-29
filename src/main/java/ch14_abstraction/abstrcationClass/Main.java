@@ -44,5 +44,4 @@ public class Main {
         phoneFactory2.setName("Samsung smart Phone Factory");
         phoneFactory2.produce("Galaxy S 26");
     }
-
 }
