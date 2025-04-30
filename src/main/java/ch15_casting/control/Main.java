@@ -6,6 +6,9 @@ public class Main {
         Computer computer = new Computer();
         LED led = new LED();
         Mouse mouse = new Mouse();
+        SmartPhtone smartPhtone = new SmartPhtone();
+        Speaker speaker = new Speaker();
+        TV tv = new TV();
         CentralControl control1 = new CentralControl(new Power[5]);
 //        CentralControl control2 = new CentralControl(new Power[] {computer, led, mouse});
         // 빈 배열을 집어 넣는 것만 가능한 것이 아니라,
@@ -18,13 +21,21 @@ public class Main {
         control1.addDevice(computer); // 배열 0번에 저장
         control1.addDevice(led);
         control1.addDevice(mouse);
+        control1.addDevice(smartPhtone);
+        control1.addDevice(speaker);
 
         System.out.println();
 
         control1.powerOn();
+        tv.on();
         System.out.println();
         control1.powerOff();
+        tv.off();
 
+        System.out.println();
+
+        control1.performSpecificMethod();
+        tv.channelUP();
 
     }
 }

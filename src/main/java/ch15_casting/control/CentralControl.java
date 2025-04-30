@@ -70,4 +70,28 @@ public class CentralControl {
             deviceArr[i].off();
         }
     }
+
+    public void performSpecificMethod() {
+        for (Power device : deviceArr) {
+            if(device instanceof TV) {
+                TV tv = (TV) device;
+                tv.channelUP();
+            } else if (device instanceof LED) {
+                LED led = (LED) device;
+                led.changeColor();
+            } else if (device instanceof Mouse) {
+                Mouse mouse = (Mouse) device;
+                mouse.leftClick();
+            } else if (device instanceof SmartPhtone) {
+                SmartPhtone smartPhtone = (SmartPhtone) device;
+                smartPhtone.touchScreen();
+            } else if(device instanceof Speaker) {
+                Speaker speaker = (Speaker) device;
+                speaker.changeEqual();
+            } else if (device instanceof Computer) {
+                Computer computer = (Computer) device;
+                computer.compute();
+            }
+        }
+    }
 }
